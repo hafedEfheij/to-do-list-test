@@ -75,11 +75,19 @@ I do recommend this method given it is easier, but if you want you can make this
 
 <!-- AUTHOR -->
 
-## 👤 Author <a name="author"></a>
+## 👤 Authors <a name="authors"></a>
+
+## 👤 Author1 <a name="authors"></a>
 
 Hafed
 
 - GitHub: [@DHafed](https://github.com/HafedEfheij)
+
+## 👤 Author2 <a name="authors"></a>
+
+Haftamu
+
+- GitHub: [@haftamu](https://github.com/haftamudesta)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
