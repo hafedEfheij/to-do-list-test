@@ -1,11 +1,19 @@
+// Import the style sheet and To Do List JavaScript file
 import './style.css';
 import ToDoList from './toDoList.js';
 
+// Create a new instance of the To Do List array
 const ToDoListArray = new ToDoList([]);
 
+// Initialize the page by creating the header and appending each item in the list to the page
 const init = () => {
+  // gets the element with the id 'to-do-list' from the HTML document
   const toDoList = document.getElementById('to-do-list');
+
+  // creates a new div element and stores it in a variable called toDoHeader.
   const toDoHeader = document.createElement('div');
+
+  // sets the class name of the div element stored in toDoHeader to 'to-do-header'.
   toDoHeader.className = 'to-do-header';
   toDoHeader.innerHTML = `<h4>Today's To Do</h4>
     <div class="icon-container">
