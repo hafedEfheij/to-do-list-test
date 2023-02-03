@@ -1,28 +1,39 @@
 export default class ToDoList {
+  // constructor to initialize the toDoList
   constructor(list) {
     this.toDoList = list;
   }
 
+  // function to add a new task to the list and update the container
   addToDo(task, container) {
+    // create a new task object with the task description, completion status and index
     const newTask = {
       description: task,
       completed: false,
       index: 0,
     };
+    // push the new task to the toDoList
     this.toDoList.push(newTask);
+    // update the list and container
     this.update(container);
   }
 
+  // function to update the list and container
   update(container) {
+    // set the index of each item in the list
     this.toDoList.map((item, i) => {
       item.index = i;
       return item;
     });
+    // save the list to local storage
     this.toLocalStorage();
+    // print the list in the container
     this.print(container);
   }
 
+  // function to save the list to local storage
   toLocalStorage() {
+    // convert the toDoList to a string and set it in local storage
     const stringToDoList = JSON.stringify(this.toDoList);
     localStorage.setItem('toDoList', stringToDoList);
   }
