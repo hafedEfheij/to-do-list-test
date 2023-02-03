@@ -1,3 +1,4 @@
+const { endsWith } = require('lodash');
 const Task = require('./utils/addNRemove.js');
 const getFilledStorage = require('./__mocks__/filledTaskList.js');
 const domContainer = require('./__mocks__/taskListDom.js');
@@ -8,18 +9,15 @@ describe('TaskList', () => {
   const task = new Task(filledTaskList);
   const ulList = domContainer();
 
-  test('Add an item to task list in dom expected list.length + 1', () => {
-    task.addToDo('new', ulList);
-    expect(ulList.children).toHaveLength(3);
+  test('Modify the li checkbox from false to true', () => {
+    task.complete(1, ulList);
+    expect(document.getElementById("to-do-1").checked).toBe(true);
   });
+  test('Modify the description value', () => {
+    task.edit(1,ulList);
+    expect(document.getElementById("text-1").value ).toBe('New text')
 
-  test('Remove an item to task list current: 3 in dom expected list.length - 1', () => {
-    task.remove(0, ulList);
-    expect(ulList.children).toHaveLength(2);
   });
+  
 
-  test('Remove an item to task list current: 3 in dom expected list.length - 1', () => {
-    task.remove(0, ulList);
-    expect(ulList.children).toHaveLength(2);
-  });
 });
