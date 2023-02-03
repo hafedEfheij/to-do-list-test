@@ -1,4 +1,8 @@
 /* Add a custom font */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 h4 {
   font-family: "Roboto", sans-serif;
 }
