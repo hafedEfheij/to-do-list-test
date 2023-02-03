@@ -89,6 +89,7 @@ Hafed
 Haftamu
 
 - GitHub: [@haftamu](https://github.com/haftamudesta)
+- Twitter: [@DestaHaftamu](https://twitter.com/DestaHftamu?t=NQ4ovkdWbsfsjh62NFEXFg&s=09)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
