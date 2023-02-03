@@ -73,63 +73,63 @@ input#input-field:focus-visible {
   align-self: flex-end;
 }
 
+/* Styles for the to-do input container */
 #to-do-input-container svg {
   position: absolute;
   right: 19px;
 }
 
-/* The unordered list with ID list */
-#list {
+/* Styles for the unordered list */
+ul#list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Display as flex container */
-  flex-direction: column; /* Arrange items vertically */
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
-/* The list item with class item-to-do */
-#list .item-to-do {
+/* Styles for each item in the to-do list */
+li.item-to-do {
   width: 100%;
   height: 50px;
-  box-sizing: border-box; /* Box-sizing to include border */
-  border-bottom: 1px solid #c3c3c3; /* Bottom border with light gray color */
+  box-sizing: border-box;
+  border-bottom: 1px solid #d1d1d1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px; /* Add left padding */
   font-family: "Roboto", sans-serif;
+  padding-left: 20px;
   position: relative;
   gap: 20px;
 }
 
-/* The remove button with class remove-btn */
-#list .remove-btn {
+/* Styles for remove button */
+.remove-btn {
   height: 50px;
-  display: flex; /* Display as flex container */
-  justify-content: center; /* Center align items horizontally */
+  display: flex;
+  justify-content: center;
   text-align: left;
   align-items: center;
-  background: #f3f2f2;
+  background: #e4e3e3;
   width: 100%;
-  color: #6e6d6d;
-  cursor: pointer; /* Add cursor pointer */
-  font-family: "Roboto", sans-serif; /* Use Roboto font */
+  cursor: pointer;
+  color: #7a7a7a;
+  font-family: "Roboto", sans-serif;
 }
 
-/* The remove icon with class to-do-icon and ID remove */
-#list .to-do-icon.remove {
-  display: none; /* Initially hide the icon */
-  right: 30px;
+.to-do-icon.remove {
+  display: none;
   cursor: pointer;
+  right: 28px;
 }
 
 input.input-to-do {
   border: none;
   font-size: 16px;
   display: flex;
-  height: 93%;
-  width: 80%;
+  width: 78%;
+  height: 92%;
 }
 
 input.input-to-do:focus-visible {
@@ -138,27 +138,32 @@ input.input-to-do:focus-visible {
 
 li.item-to-do.edit,
 .edit .input-to-do {
-  background: #f8eeb4;
+  background: #f7ecb1;
 }
 
+/* edit */
 .edit .to-do-icon.remove {
   display: block;
 }
 
+/* drag */
 .to-do-icon.drag {
   display: block;
 }
 
+/* edit */
 .edit .to-do-icon.drag {
   display: none;
 }
 
+/* checked input */
 .checked input.input-to-do {
   text-decoration: line-through;
   color: gray;
 }
 
+/* button disabled */
 .remove-btn.disabled {
   cursor: not-allowed;
-  background: #cecdcd;
+  background: #c9c9c9;
 }

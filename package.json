@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/NelsonAraujo93/toDoList/issues"
   },
-  "jest":{
+  "jest": {
     "testEnvironment": "jsdom"
   },
   "homepage": "https://github.com/NelsonAraujo93/toDoList#readme",
