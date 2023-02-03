@@ -35,4 +35,4 @@ describe('TaskList', () => {
     // Assert that the number of children of the task list DOM is now 1
     expect(ulList.children).toHaveLength(1);
   });
-}); 
+});
