@@ -82,7 +82,6 @@ I do recommend this method given it is easier, but if you want you can make this
 Hafed
 
 - GitHub: [@DHafed](https://github.com/HafedEfheij)
-- Twitter: [@DestaHaftamu](https://twitter.com/DestaHftamu?t=NQ4ovkdWbsfsjh62NFEXFg&s=09)
 
 ## 👤 Author2 <a name="authors"></a>
 
